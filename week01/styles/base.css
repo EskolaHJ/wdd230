@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif; /* Example font, replace with your choice */
+    background-color: #f0f0f0; /* Adjust the color to match the screenshot */
+    color: #333; /* Adjust text color to match the screenshot */
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #0044cc; /* Adjust the color to match the screenshot */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    border-radius: 50%; /* To create a circular image */
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #333; /* Adjust the color to match the screenshot */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff; /* Adjust the color to match the screenshot */
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Simple box-shadow for the card effect */
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0044cc; /* Adjust the color to match the screenshot */
+    padding-bottom: 5px;
+}
+
+/* Learning Activities List */
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd; /* subtle bottom border for each list item */
+}
+
+.card li a {
+    text-decoration: none;
+    color: #0044cc; /* Adjust the color to match the screenshot */
+    font-weight: bold;
+}
+
+.card li a:hover {
+    text-decoration: underline;
+}
+
+/* Information Card */
+/* (Use similar styling as .card but adjust specific details as needed) */
+
+/* Footer Styling */
+footer {
+    background-color: #333; /* Adjust the color to match the screenshot */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* If you want to position it at the bottom */
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    /* Adjust styles for mobile view */
+}
