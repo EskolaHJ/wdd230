@@ -22,8 +22,13 @@ header {
     /* Adjust the color to match the screenshot */
     color: white;
     padding: 20px;
-    text-align: center;
+    text-align: left;
     grid-template-columns: 150px auto;
+}
+
+.logo {
+    width: 80px;
+    padding-top: 4px;
 }
 
 header img {

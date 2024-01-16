@@ -7,57 +7,59 @@
     <title>[Jacob Eskola] - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="WDD 230 - Web Frontend Development course assignment portal by [Jacob Eskola].">
     <meta name="author" content="[Jacob Eskola]">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="week01/styles/base.css">
 </head>
 
 <body>
+    <div id="content">
+        <header> <!-- Until I figure out how to shrink the photo it'll be commented out -->
+            <a id="profile">
+                <img class="logo" src="week01/images/Jacob_Eskola.jpg" alt="My Profile">
+            </a>
+            <h1>Jacob Eskola</h1>
+        </header>
 
-    <header> <!-- Until I figure out how to shrink the photo it'll be commented out -->
-        <img src="images/Jacob Eskola.jpg" alt="My Profile">
-        <h1>Jacob Eskola</h1>
-    </header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="lesson03/chamber-site-plan.html">Site Plan</a>
+            <a href="chamber">Chamber</a>
+            <a href="https://byui.edu" target="_blank">BYU-Idaho</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/22.2?lang=eng"
+                target="_blank">Scriptures</a>
+        </nav>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="lesson03/chamber-site-plan.html">Site Plan</a>
-        <a href="chamber">Chamber</a>
-        <a href="https://byui.edu" target="_blank">BYU-Idaho</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/22.2?lang=eng"
-            target="_blank">Scriptures</a>
-    </nav>
+        <main>
+            <h2>WDD 230: Web Frontend Development</h2>
+            <section class="card">
+                <h3>Learning Activates</h3>
+                <ul>
+                    <li><a href="holygrail.html">01: Holy Layout | JS Pen</a></li>
+                    <li><a href="">02:</a></li>
+                    <li><a href="">03:</a></li>
+                    <li><a href="">04:</a></li>
+                    <li><a href="">05:</a></li>
+                    <li><a href="">06:</a></li>
+                    <li><a href="">07:</a></li>
+                    <li><a href="">08:</a></li>
+                    <li><a href="">09:</a></li>
+                    <li><a href="">10:</a></li>
+                </ul>
+            </section>
 
-    <main>
-        <h2>WDD 230: Web Frontend Development</h2>
-        <section class="card">
-            <h3>Learning Activates</h3>
-            <ul>
-                <li><a href="holygrail.html">01: Holy Layout | JS Pen</a></li>
-                <li><a href="">02:</a></li>
-                <li><a href="">03:</a></li>
-                <li><a href="">04:</a></li>
-                <li><a href="">:05</a></li>
-                <li><a href="">06:</a></li>
-                <li><a href="">07:</a></li>
-                <li><a href="">08:</a></li>
-                <li><a href="">09:</a></li>
-                <li><a href="">10:</a></li>
-            </ul>
-        </section>
+            <section class="card">
+                <h3>Information</h3>
+                <p><strong>Idaho, United States</strong></p>
+            </section>
 
-        <section class="card">
-            <h3>Information</h3>
-            <p><strong>Idaho, United States</strong></p>
-        </section>
+        </main>
 
-    </main>
+        <footer>
+            <p>&copy; <span id="year"> </span> Jacob Eskola </p>
+            <p id="lastModified">Page last Updated: <span id="lastUpdatedDate"></span></p>
+        </footer>
 
-    <footer>
-        <p>&copy; <span id="year"> </span> Jacob Eskola </p>
-        <p id="lastModified">Page last Updated: <span id="lastUpdatedDate"></span></p>
-    </footer>
-
-    <script src="scripts/getdates.js"></script>
-
+        <script src="scripts/getdates.js"></script>
+    </div>
 </body>
 
 </html>
