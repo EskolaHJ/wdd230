@@ -5,14 +5,20 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
 /* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
     /* Example font, replace with your choice */
     background-color: #f0f0f0;
-    /* Adjust the color to match the screenshot */
+
     color: #333;
-    /* Adjust text color to match the screenshot */
+
     line-height: 1.6;
 }
 
@@ -22,7 +28,7 @@ header {
     align-items: center;
     justify-content: center;
     background-color: #0044cc;
-    /* Adjust the color to match the screenshot */
+
     color: white;
     padding: 20px;
     text-align: left;
@@ -50,8 +56,9 @@ header h1 {
 
 /* Navigation Styling */
 nav {
+    display: flex;
+    flex-direction: column;
     background-color: #333;
-    /* Adjust the color to match the screenshot */
     color: white;
     padding: 10px;
     text-align: center;
@@ -74,7 +81,7 @@ main {
 
 .card {
     background-color: #ffffff;
-    /* Adjust the color to match the screenshot */
+
     margin-bottom: 20px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -84,7 +91,7 @@ main {
 .card h3 {
     margin-bottom: 15px;
     border-bottom: 2px solid #0044cc;
-    /* Adjust the color to match the screenshot */
+
     padding-bottom: 5px;
 }
 
@@ -103,7 +110,7 @@ main {
 .card li a {
     text-decoration: none;
     color: #0044cc;
-    /* Adjust the color to match the screenshot */
+
     font-weight: bold;
 }
 
@@ -117,7 +124,7 @@ main {
 /* Footer Styling */
 footer {
     background-color: #333;
-    /* Adjust the color to match the screenshot */
+
     color: white;
     text-align: center;
     padding: 20px;
@@ -131,5 +138,9 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 600px) {
+
     /* Adjust styles for mobile view */
+    nav {
+        flex-direction: row;
+    }
 }
