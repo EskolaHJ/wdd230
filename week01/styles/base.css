@@ -140,7 +140,19 @@ footer p {
 @media (max-width: 600px) {
 
     /* Adjust styles for mobile view */
-    nav {
-        flex-direction: row;
+    header,
+    nav,
+    main,
+    footer {
+        flex-direction: column;
     }
+
+    nav a {
+        display: block;
+        /* Stack nav links vertically */
+        margin: 10px 0;
+        /* Adjust margin for vertical stacking */
+    }
+
+
 }
