@@ -8,8 +8,8 @@
     <meta name="description" content="WDD 230 - Web Frontend Development course assignment portal by [Jacob Eskola].">
     <meta name="author" content="[Jacob Eskola]">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
 </head>
 
 <body>
@@ -21,7 +21,8 @@
             <h1>Jacob Eskola</h1>
         </header>
 
-        <nav>
+        <button class="hamburger" aria-label="Toggle navigation">≡</button>
+        <nav id="main-navigation">
             <a href="#">Home</a>
             <a href="lesson03/chamber-site-plan.html">Site Plan</a>
             <a href="chamber">Chamber</a>
@@ -54,13 +55,16 @@
             </section>
 
         </main>
-
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77765.26634728219!2d-116.30581055017002!3d43.586362009736106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54aef172e947b49d%3A0x9a5b989b36679d9b!2sBoise%2C%20ID!5e0!3m2!1sen!2sus!4v1706228610235!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         <footer>
             <p>&copy; <span id="year"> </span> Jacob Eskola </p>
             <p id="lastModified">Page last Updated: <span id="lastUpdatedDate"></span></p>
         </footer>
 
-        <script src="week01/scripts/getdates.js"></script>
+        <script src="scripts/getdates.js"></script>
     </div>
 </body>
 

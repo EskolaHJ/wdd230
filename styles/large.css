@@ -1,7 +1,52 @@
-/* Responsive Design */
+/* Styles for screens wider than 600px */
+@media (min-width: 601px) {
+
+    header,
+    nav,
+    main,
+    footer {
+        flex-direction: row;
+        /* Align elements in a row for larger screens */
+    }
+
+    nav {
+        justify-content: center;
+        /* Center the navigation links */
+    }
+
+    nav a {
+        display: inline-block;
+        /* Display links in a line */
+        margin: 0 10px;
+        /* Adjust margin for horizontal layout */
+    }
+
+    .hamburger {
+        display: none;
+        /* Hide the hamburger menu on larger screens */
+    }
+
+    #main-navigation {
+        display: flex;
+        /* Display the navigation menu */
+    }
+
+    #main-navigation a::after {
+        content: "";
+        /* Optionally, remove the arrow on larger screens */
+    }
+}
+
+/* Existing styles for mobile view */
 @media (max-width: 600px) {
 
-    /* Adjust styles for mobile view */
+    /* Keep your existing styles here */
+    #main-navigation a::after {
+        content: "→";
+        display: inline-block;
+        margin-left: 5px;
+    }
+
     header,
     nav,
     main,
@@ -11,10 +56,18 @@
 
     nav a {
         display: block;
-        /* Stack nav links vertically */
         margin: 10px 0;
-        /* Adjust margin for vertical stacking */
     }
 
+    .hamburger {
+        display: block;
+    }
 
+    #main-navigation {
+        display: none;
+    }
+
+    #main-navigation.active {
+        display: block;
+    }
 }
