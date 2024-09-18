@@ -87,10 +87,54 @@ main {
     list-style-type: none;
     padding: 0;
 }
+.card li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.card li a {
+    text-decoration: none;
+    color: #0044cc;
+
+    font-weight: bold;
+}
+
+.card li a:hover {
+    text-decoration: underline;
+}
 /* Footer*/
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    /* If you want to position it at the bottom*/
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
 #flag {
     height: 30px;
     width: 30px;
     padding-top: 1em;
     padding-left: 2px;
+}
+
+@media (max-width:600px) {
+    header,
+    nav,
+    main,
+    footer {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        /* Stack nav links vertically*/
+        margin: 10px 0;
+        /* Adjust margin for vertical stacking*/
+    }
 }
