@@ -10,23 +10,26 @@
 </head>
 <body>
     <header>
-        <img src="" alt="Picture of Jacob Eskola">
+        <a id="profile">
+            <img class="logo" src="/images/Jacob_Eskola.jpg" alt="Picture of Jacob Eskola">
+        </a>
         <h1>Jacob Eskola</h1>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
+    <button class="hamburger" aria-label="Toggle navigation">≡</button>
+    <nav id="main-navigation">
+        <a href="#">Home</a>
         <a href="lesson03/chamber-sitei-play.html">Site Plan</a>
         <a href="chamber/">Chamber</a>
         <a href="https://www.byui.edu" target="_blank">BYU-Idaho</a>
         <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/17.9-10?lang=eng" target="_blank">Scripture</a>
     </nav>
     <main>
-        <h2>WDD 230</h2>
+        <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activities</h3>
             <!-- ul>li*10>a to multi place list elements-->
             <ul>
-                <li><a href=""></a></li>
+                <li><a href="./lesson01/holygrail.html">01: Holy Layout | JS Pen</a></li>
                 <li><a href=""></a></li>
                 <li><a href=""></a></li>
                 <li><a href=""></a></li>
@@ -40,11 +43,12 @@
         </section>
         <section class="card">
             <h3>Information</h3>
+            <p><strong>Idaho, United States</strong></p>
         </section>
     </main>
     <footer>
-        <p>&copy;2023 <br> Jacob Eskola<br>Idaho <img id="flag" src="/images/flag_of_idaho.jpg" alt="Flag of Idaho"> </p>
-        <p id="lastModified"></p>
+        <p>&copy;2023 <span id="year"></span>Idaho <img id="flag" src="/images/flag_of_idaho.jpg" alt="Flag of Idaho"> </p>
+        <p id="lastModified">Page last Updated: <span id="lastUpdatedDate"></span></p>
     </footer>
 </body>
 </html>
