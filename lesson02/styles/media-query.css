@@ -1,5 +1,5 @@
 body {
-    font-family: "Roboto"; /* Setting font type for all the body content */
+    font-family: "Roboto", sans-serif;  /* Setting font type for all the body content */
 }
 
 header,
