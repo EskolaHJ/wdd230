@@ -1,0 +1,24 @@
+body {
+    font-family: "Roboto"; /* Setting font type for all the body content */
+}
+
+header,
+main,
+footer {
+    max-width: 640px; /* Setting the maximum width */
+    margin: 1rem auto; /* Setting the page into the center using margin*/
+    border: 1px solid #bbb; 
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, .3); /* Creating a box shadow around the content */
+    padding: 1rem;
+    background-color: aqua;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem; /* Setting up a gap */
+}
+
+section {
+    padding: 1rem;
+    background-color: white;
+} 
