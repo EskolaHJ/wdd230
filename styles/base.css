@@ -49,11 +49,11 @@ header h1 {
 /* Nav Links*/
 nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: #333;
     color: white;
     padding: 10px;
-    text-align: center;
+    justify-content: space-around;
 }
 
 nav a {

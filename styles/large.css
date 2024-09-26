@@ -1,0 +1,48 @@
+@media screen and (min-max: 768px) {
+    header {
+        background-color: red;
+        color: black;
+    }
+
+    /* The navigation bar layout changes to a vertical (column) layout */
+    nav {
+        /* Stack items vertically */
+        flex-direction: column;
+        /* Keep the navigation bar's position relative to its original place */
+        position: relative;
+    }
+
+    /* Initially hide the navigation links for mobile view */
+    nav a {
+         /* Hide the links by default */
+        display: none;
+        /* Align the links in the center */
+        text-align: center;
+         /* Add padding to make the links clickable */
+        padding: 10px;
+    }
+
+    /* Add a "Menu" label that appears in mobile view as a dropdown trigger */
+    nav:before {
+        /* Insert the word 'Menu' as content */
+        content: 'Menu';
+        /* Set background color for the "Menu" button */
+        background-color: #333;
+        /* Set text color for the "Menu" button */
+        color: white;
+        /* Add padding for a clickable area*/
+        padding: 10px;
+        /* Make sure the "Menu" label is displayed as a block element*/
+        display: block;
+        /* Center the text within the button */
+        text-align: center;
+        /* Add a pointer cursor to show it's clickable*/
+        cursor: pointer;
+    }
+
+    /* When the user hovers over the navigation bar, show the links */
+    nav:hover a {
+        /* Display the navigation links in a vertical list */
+        display: block;
+    }
+}
