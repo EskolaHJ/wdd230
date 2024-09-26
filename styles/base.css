@@ -28,7 +28,6 @@ header {
     color: white;
     padding: 20px;
     text-align: left;
-    grid-template-columns: 150px auto;
 }
 
 .logo {
