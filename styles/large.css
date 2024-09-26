@@ -18,4 +18,31 @@
         text-decoration: underline;
     }
     
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        box-shadow: 0 1px 1px 1px rgba(0, 0, 0, .3); /* Creating a box shadow around the content */
+        border: 1px solid black;
+        padding: 20px;
+        margin: 25px;
+    }
+    .card1 {
+        grid-column: 1 / 2;
+        box-shadow: 0 1px 1px 1px rgba(0,0,0, .4);
+        border: .5px solid black;
+        padding: 10px;
+        margin: 5px;
+    }
+    .card {
+        grid-column: 2 / 3;
+        box-shadow: 0 1px 1px 1px rgba(0,0,0, .4);
+        border: .5px solid black;
+        padding: 10px;
+        margin: 5px;
+    }
 }
