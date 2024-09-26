@@ -69,36 +69,36 @@ main {
     padding: 20px;
 }
 
-.card {
+.card, .card1 {
     background-color: #fff;
     margin-bottom: 20px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* box-shadow for the card effect*/
 }
-.card h3 {
+.card h3, .card1 h3 {
     margin-bottom: 15px;
     border-bottom: 2px solid #0044cc;
     padding-bottom: 5px
 }
 
 /* Learning Activities List*/
-.card ul {
+.card1 ul {
     list-style-type: none;
     padding: 0;
 }
-.card li {
+.card1 li {
     padding: 5px 0;
     border-bottom: 1px solid #ddd;
 }
 
-.card li a {
+.card1 li a {
     text-decoration: none;
     color: #0044cc;
 
     font-weight: bold;
 }
 
-.card li a:hover {
+.card1 li a:hover {
     text-decoration: underline;
 }
 /* Footer*/
@@ -132,7 +132,7 @@ footer p {
     }
 
     nav {
-        justify-content: center;
+        align-items: center;
     }
     nav a {
         display: block;
