@@ -1,0 +1,23 @@
+/* hierarchy_small.css */
+
+/* 2. Specific Styles for Rule of Hierarchy on Small Screens */
+@media (max-width: 768px) {
+    .hierarchy-section {
+        margin-bottom: 60px;
+        padding-bottom: 30px;
+    }
+
+    .hierarchy-section h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .hierarchy-section img {
+        max-width: 100%;
+        margin: 0 auto 20px auto;
+    }
+
+    .hierarchy-section p {
+        max-width: 100%;
+    }
+}

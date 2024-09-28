@@ -5,14 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Jacob Eskola">
     <meta name="description" content="WDD 230 - Web Frontend Development, Jacob Eskola, course assignment Design Principles.">
-    <meta property="og:title" content="Home page">
+    <meta property="og:title" content="Rule of Thirds">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="images/rogers_third.jpeg"> <!-- Replace with actual image path -->
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <title>Document</title>
+    <title>Rule of Thirds</title>
+    <!-- Link to Base CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+    <!-- Link to Large Screen Styles -->
+    <link rel="stylesheet" href="styles/thirds_large.css">
+    <!-- Link to Small Screen Styles -->
+    <link rel="stylesheet" href="styles/thirds_small.css">
+    <!-- Google Fonts for Clean Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <h1>Rule of Thirds</h1>
+            <nav>
+                <ul>
+                    <li><a href="#what">What is it?</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#application">Application</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="what" class="thirds-section">
+            <div class="container">
+                <h2>What is the Rule of Thirds?</h2>
+                <img 
+                    src="images/Rogesr_third.jpeg" alt="Mr. Rogers picture showing the rule of thirds">
+                <p>The Rule of Thirds is a fundamental principle in photography and design that helps create balanced and visually appealing compositions. By dividing an image into nine equal parts using two horizontal and two vertical lines, key elements are placed along these lines or their intersections to enhance the overall balance and interest.</p>
+            </div>
+        </section>
+        <section id="history" class="thirds-section">
+            <div class="container">
+                <h2>History</h2>
+                <p>The Rule of Thirds has been utilized by artists and photographers for centuries to guide the placement of key elements within a composition. It is rooted in the golden ratio and has been a staple in visual arts to create harmonious and engaging visuals.</p>
+            </div>
+        </section>
+        <section id="application" class="thirds-section">
+            <div class="container">
+                <h2>Application</h2>
+                <p>By dividing the image into nine equal parts, the Rule of Thirds helps in positioning the main subject along the lines or their intersections, enhancing the overall balance. This technique guides the viewer’s eye naturally through the composition, making the image more dynamic and engaging.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Design Principles. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

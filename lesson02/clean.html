@@ -5,14 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Jacob Eskola">
     <meta name="description" content="WDD 230 - Web Frontend Development, Jacob Eskola, course assignment Design Principles.">
-    <meta property="og:title" content="Home page">
+    <meta property="og:title" content="Clean Design">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="images/clean_design_example.jpeg"> <!-- Replace with actual image path -->
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <title>Document</title>
+    <title>Clean Design</title>
+    <!-- Link to Base CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+    <!-- Link to Large Screen Styles -->
+    <link rel="stylesheet" href="styles/clean_design_large.css">
+    <!-- Link to Small Screen Styles -->
+    <link rel="stylesheet" href="styles/clean_design_small.css">
+    <!-- Google Fonts for Clean Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <h1>Clean Design</h1>
+            <nav>
+                <ul>
+                    <li><a href="#what">What is it?</a></li>
+                    <li><a href="#principles">Principles</a></li>
+                    <li><a href="#examples">Examples</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="what" class="clean-section">
+            <div class="container">
+                <h2>What is Clean Design?</h2>
+                <img 
+                    src="images/clean_design_example.webp" alt="Clean Design Example">
+                <p>Clean Design emphasizes simplicity, clarity, and usability by using minimalistic elements, ample white space, consistent typography, and a cohesive color palette. It aims to create an aesthetically pleasing and user-friendly interface that enhances the overall user experience.</p>
+            </div>
+        </section>
+        <section id="principles" class="clean-section">
+            <div class="container">
+                <h2>Principles</h2>
+                <ul>
+                    <li>Simplicity: Eliminate unnecessary elements to highlight essential content.</li>
+                    <li>Clarity: Ensure information is easily understandable.</li>
+                    <li>Consistency: Maintain uniform styles and layouts across the webpage.</li>
+                    <li>White Space: Use ample empty space to reduce clutter and enhance readability.</li>
+                    <li>Typography: Select clear, readable fonts with appropriate sizes and spacing.</li>
+                    <li>Color Palette: Utilize a cohesive and limited set of colors to create visual harmony.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="examples" class="clean-section">
+            <div class="container">
+                <h2>Examples</h2>
+                <img 
+                    src="images/clean_design_example2.webp" alt="Clean Design Example 2">
+                <p>Here are some examples of clean design in action. Notice the use of white space, simple color schemes, and consistent typography that make the content easy to read and navigate.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Design Principles. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

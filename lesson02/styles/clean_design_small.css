@@ -1,0 +1,28 @@
+/* clean_design_small.css */
+
+/* 2. Specific Styles for Clean Design on Small Screens */
+@media (max-width: 768px) {
+    .clean-section {
+        margin-bottom: 60px;
+        padding-bottom: 30px;
+    }
+
+    .clean-section h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .clean-section img {
+        max-width: 100%;
+        margin: 0 auto 20px auto;
+    }
+
+    .clean-section p,
+    .clean-section ul {
+        max-width: 100%;
+    }
+
+    .clean-section ul li {
+        width: 80%;
+    }
+}

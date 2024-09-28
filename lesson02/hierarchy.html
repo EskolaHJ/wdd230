@@ -5,14 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Jacob Eskola">
     <meta name="description" content="WDD 230 - Web Frontend Development, Jacob Eskola, course assignment Design Principles.">
-    <meta property="og:title" content="Home page">
+    <meta property="og:title" content="Rule of Hierarchy">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="images/rule_of_hierarchy.jpeg"> <!-- Replace with actual image path -->
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <title>Hierarchy</title>
+    <title>Rule of Hierarchy</title>
+    <!-- Link to Base CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+    <!-- Link to Large Screen Styles -->
+    <link rel="stylesheet" href="styles/hierarchy_large.css">
+    <!-- Link to Small Screen Styles -->
+    <link rel="stylesheet" href="styles/hierarchy_large.css">
+    <!-- Google Fonts for Clean Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <h1>Rule of Hierarchy</h1>
+            <nav>
+                <ul>
+                    <li><a href="#what">What is it?</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#application">Application</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="what" class="hierarchy-section">
+            <div class="container">
+                <h2>What is the Rule of Hierarchy?</h2>
+                <img 
+                    src="images/rule_of_hierarchy.webp" alt="Illustration of the Rule of Hierarchy">
+                <p>The Rule of Hierarchy is a fundamental principle in design that organizes elements in a way that signifies their importance, guiding the viewer’s attention through the content seamlessly. By emphasizing certain elements over others, designers can create a clear visual path that directs users’ focus effectively.</p>
+            </div>
+        </section>
+        <section id="history" class="hierarchy-section">
+            <div class="container">
+                <h2>History</h2>
+                <p>The concept of hierarchy in design has been utilized for centuries, evolving alongside art and architecture to enhance communication and aesthetics. It plays a crucial role in various fields, including graphic design, web design, and information architecture.</p>
+            </div>
+        </section>
+        <section id="application" class="hierarchy-section">
+            <div class="container">
+                <h2>Application</h2>
+                <p>By strategically sizing, coloring, and spacing elements, designers can create a clear visual path that prioritizes information effectively. This ensures that the most important information stands out and is easily noticeable to the user.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Design Principles. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

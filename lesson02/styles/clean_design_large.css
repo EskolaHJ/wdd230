@@ -1,0 +1,27 @@
+/* clean_design_large.css */
+
+/* 1. Specific Styles for Clean Design on Large Screens */
+.clean-section {
+    margin-bottom: 80px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.clean-section:last-of-type {
+    border-bottom: none;
+}
+
+.clean-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 25px;
+}
+
+.clean-section img {
+    max-width: 800px;
+    margin: 0 auto 25px auto;
+}
+
+.clean-section p,
+.clean-section ul {
+    max-width: 800px;
+}
