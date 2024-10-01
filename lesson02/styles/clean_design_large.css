@@ -1,6 +1,6 @@
 /* clean_design_large.css */
 
-/* 1. Specific Styles for Clean Design on Large Screens */
+/* Specific Styles for Clean Design on Large Screens */
 .clean-section {
     margin-bottom: 80px;
     padding-bottom: 40px;
@@ -14,14 +14,25 @@
 .clean-section h2 {
     font-size: 2.5em;
     margin-bottom: 25px;
+    color: #2c3e50; /* Consistent color for headings */
 }
 
 .clean-section img {
+    display: block;
     max-width: 800px;
     margin: 0 auto 25px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+/* Enhancing Readability with White Space */
 .clean-section p,
 .clean-section ul {
     max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+.clean-section ul li {
+    width: 50%; /* Limited width for better focus */
 }

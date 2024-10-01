@@ -1,6 +1,6 @@
 /* clean_design_small.css */
 
-/* 2. Specific Styles for Clean Design on Small Screens */
+/* Specific Styles for Clean Design on Small Screens */
 @media (max-width: 768px) {
     .clean-section {
         margin-bottom: 60px;
@@ -15,6 +15,8 @@
     .clean-section img {
         max-width: 100%;
         margin: 0 auto 20px auto;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
     .clean-section p,
@@ -23,6 +25,11 @@
     }
 
     .clean-section ul li {
-        width: 80%;
+        width: 80%; /* Wider elements on smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
     }
 }

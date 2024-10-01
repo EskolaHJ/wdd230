@@ -1,6 +1,6 @@
 /* thirds_small.css */
 
-/* 2. Specific Styles for Rule of Thirds on Small Screens */
+/* Specific Styles for Rule of Thirds on Small Screens */
 @media (max-width: 768px) {
     .thirds-section {
         margin-bottom: 60px;
@@ -15,9 +15,16 @@
     .thirds-section img {
         max-width: 100%;
         margin: 0 auto 20px auto;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
     .thirds-section p {
         max-width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
     }
 }

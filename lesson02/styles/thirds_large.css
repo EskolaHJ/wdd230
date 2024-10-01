@@ -1,6 +1,6 @@
 /* thirds_large.css */
 
-/* 1. Specific Styles for Rule of Thirds on Large Screens */
+/* Specific Styles for Rule of Thirds on Large Screens */
 .thirds-section {
     margin-bottom: 80px;
     padding-bottom: 40px;
@@ -16,11 +16,18 @@
     margin-bottom: 25px;
 }
 
+/* Applying Rule of Thirds using CSS Grid */
 .thirds-section img {
+    display: block;
     max-width: 800px;
     margin: 0 auto 25px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+/* Positioning Text Blocks */
 .thirds-section p {
     max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
