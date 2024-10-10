@@ -1,0 +1,110 @@
+/* General styles */
+body {
+    font-family: 'Roboto Serif', serif; /* Changed to Roboto Serif for paragraphs and non-header elements */
+    background-color: #FFF7AE; /* Light yellow background */
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center; /* Centers the content */
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    max-width: 1200px;
+    width: 90%;
+    background-color: white; /* Block background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for block effect */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background-color: #6A0DAD; /* Violet header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif; /* Lato for headings */
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+}
+
+/* Sections styling */
+section {
+    background-color: #FFF3CD; /* Light yellow section blocks */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for block effect */
+}
+
+h2 {
+    font-family: 'Lato', sans-serif; /* Lato for section headings */
+    color: #6A0DAD; /* Violet headings */
+    margin-bottom: 10px;
+}
+
+p, li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+strong {
+    font-weight: bold;
+    font-family: 'Lato', sans-serif; /* Lato for strong emphasis */
+}
+
+#violet {
+    color: #6A0DAD;
+}
+
+#yellow {
+    color: #FFD700;
+}
+
+#roboto {
+    font-family: 'Lato', sans-serif;
+}
+
+#lato {
+    font-family: 'Roboto Serif', serif; /* Changed to Roboto Serif for body text */
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p, li {
+        font-size: 1rem;
+    }
+
+    ul {
+        padding-left: 15px;
+    }
+}
