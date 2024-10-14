@@ -5,28 +5,19 @@
 /* -------------------- */
 @media only screen and (max-width: 600px) {
 
-    .nav-links.show {
-        display: flex;
-        flex-direction: column;
-    }
-
     /* Grid Layout Adjustment */
     .grid-container {
-        grid-template-areas:
-            "header"
-            "main"
-            "footer";
-        grid-template-columns: 1fr;
+        width: 95%;
     }
 
     /* Header */
     .header {
-        padding: 10px 0;
+        padding: 15px;
     }
 
     /* Hamburger Menu Button */
     .hamburger {
-        display: block;
+        display: block; /* Visible on small screens */
     }
 
     /* Navigation Links */
@@ -34,7 +25,7 @@
         flex-direction: column;
         display: none; /* Hidden by default, toggled via JavaScript */
         width: 100%;
-        background-color: #006BB6;
+        background-color: #6A0DAD;
     }
 
     .nav-links li {
@@ -43,7 +34,7 @@
 
     .nav-links li a {
         padding: 12px 0;
-        border-top: 1px solid #00539C;
+        border-top: 1px solid #5A0CBA; /* Darker violet border */
     }
 
     /* Show navigation links when hamburger is clicked */
@@ -63,7 +54,24 @@
 
     /* Footer */
     .footer {
-        font-size: 12px;
-        padding: 10px 0;
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+
+    /* Typography Adjustments */
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .section p, .section li {
+        font-size: 1rem;
+    }
+
+    .section ul {
+        padding-left: 15px;
     }
 }

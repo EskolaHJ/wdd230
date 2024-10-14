@@ -13,32 +13,41 @@
 
 /* Body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
+    font-family: 'Roboto Serif', serif; /* Roboto Serif for paragraphs and non-header elements */
+    background-color: #FFF7AE; /* Light yellow background */
+    display: grid;
+    place-items: center; /* Centers the grid-container */
+    min-height: 100vh;
 }
 
 /* Grid Container */
 .grid-container {
     display: grid;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-    grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+    max-width: 1200px;
+    width: 90%;
+    background-color: white; /* Block background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for block effect */
+    border-radius: 10px;
+    overflow: hidden;
+    grid-gap: 20px;
 }
 
 /* Header */
 .header {
-    grid-area: header;
-    background-color: #00539C;
+    background-color: #6A0DAD; /* Violet header */
     color: white;
-    padding: 15px 0;
+    padding: 20px;
+    text-align: center;
 }
 
-/* Navigation */
+.header h1 {
+    font-family: 'Lato', sans-serif; /* Lato for headings */
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Navigation Menu */
 nav {
     position: relative;
 }
@@ -51,7 +60,7 @@ nav {
     color: white;
     cursor: pointer;
     position: absolute;
-    top: 15px;
+    top: 20px;
     right: 20px;
 }
 
@@ -65,47 +74,60 @@ nav {
     color: white;
     text-decoration: none;
     padding: 14px 20px;
-    display: block;
     transition: background-color 0.3s ease;
 }
 
 .nav-links li a:hover {
-    background-color: #003F5C;
+    background-color: #6A0DAD; /* Slightly darker violet on hover */
 }
 
 /* Main Content */
 .main-content {
-    grid-area: main;
     padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+}
+
+/* Sections styling */
+section {
+    background-color: #FFF3CD; /* Light yellow section blocks */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for block effect */
+}
+
+.section h2 {
+    font-family: 'Lato', sans-serif; /* Lato for section headings */
+    color: #6A0DAD; /* Violet headings */
+    margin-bottom: 10px;
+}
+
+.section p, .section li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.section ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.section strong {
+    font-weight: bold;
+    font-family: 'Lato', sans-serif; /* Lato for strong emphasis */
 }
 
 /* Footer */
 .footer {
-    grid-area: footer;
-    background-color: #003F5C;
+    background-color: #6A0DAD; /* Matching header color */
     color: white;
     text-align: center;
-    padding: 15px 0;
-    font-size: 14px;
+    padding: 20px;
+    font-size: 1rem;
 }
 
 /* Responsive Images */
 img {
     max-width: 100%;
     height: auto;
-}
-
-/* CTA Button */
-.cta {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #006BB6;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta:hover {
-    background-color: #00539C;
 }

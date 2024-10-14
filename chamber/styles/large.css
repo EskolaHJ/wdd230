@@ -7,39 +7,27 @@
 
     /* Grid Layout Adjustment */
     .grid-container {
-        grid-template-areas:
-            "header header"
-            "main footer";
-        grid-template-columns: 3fr 1fr;
+        width: 85%;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 1fr;
     }
 
     /* Header */
     .header {
-        padding: 25px 0;
-    }
-
-    /* Hamburger Menu Button */
-    .hamburger {
-        display: none; /* Hidden on large screens */
+        padding: 25px;
     }
 
     /* Navigation Links */
     .nav-links {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .nav-links li {
-        margin: 0 15px;
-    }
-
-    .nav-links li a {
-        padding: 16px 20px;
+        justify-content: center;
     }
 
     /* Main Content */
     .main-content {
         padding: 25px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 25px;
     }
 
     /* Hero Section */
@@ -47,14 +35,26 @@
         text-align: left;
     }
 
-    /* Events, Weather, Spotlights Sections */
-    .events, .weather, .spotlights {
-        margin-bottom: 25px;
-    }
-
     /* Footer */
     .footer {
-        font-size: 16px;
-        padding: 20px 0;
+        font-size: 1.2rem;
+        padding: 25px;
+    }
+
+    /* Typography Adjustments */
+    .header h1 {
+        font-size: 3rem;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    .section p, .section li {
+        font-size: 1.2rem;
+    }
+
+    .section ul {
+        padding-left: 25px;
     }
 }

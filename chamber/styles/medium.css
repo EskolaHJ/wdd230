@@ -7,16 +7,12 @@
 
     /* Grid Layout Adjustment */
     .grid-container {
-        grid-template-areas:
-            "header"
-            "main"
-            "footer";
-        grid-template-columns: 1fr;
+        width: 90%;
     }
 
     /* Header */
     .header {
-        padding: 15px 0;
+        padding: 20px;
     }
 
     /* Hamburger Menu Button */
@@ -27,7 +23,6 @@
     /* Navigation Links */
     .nav-links {
         display: flex;
-        justify-content: center;
     }
 
     .nav-links li {
@@ -48,14 +43,26 @@
         text-align: left;
     }
 
-    /* Events, Weather, Spotlights Sections */
-    .events, .weather, .spotlights {
-        margin-bottom: 20px;
-    }
-
     /* Footer */
     .footer {
-        font-size: 14px;
-        padding: 15px 0;
+        font-size: 1rem;
+        padding: 20px;
+    }
+
+    /* Typography Adjustments */
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .section h2 {
+        font-size: 1.8rem;
+    }
+
+    .section p, .section li {
+        font-size: 1.1rem;
+    }
+
+    .section ul {
+        padding-left: 20px;
     }
 }
