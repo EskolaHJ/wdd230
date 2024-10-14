@@ -1,0 +1,111 @@
+/* base.css */
+
+/* -------------------- */
+/* Global Styles */
+/* -------------------- */
+
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    grid-area: header;
+    background-color: #00539C;
+    color: white;
+    padding: 15px 0;
+}
+
+/* Navigation */
+nav {
+    position: relative;
+}
+
+.hamburger {
+    display: none; /* Hidden by default, visible on small screens via media queries */
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #003F5C;
+}
+
+/* Main Content */
+.main-content {
+    grid-area: main;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    grid-area: footer;
+    background-color: #003F5C;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* CTA Button */
+.cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006BB6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #00539C;
+}

@@ -1,0 +1,69 @@
+/* small.css */
+
+/* -------------------- */
+/* Styles for Screens 600px and below */
+/* -------------------- */
+@media only screen and (max-width: 600px) {
+
+    .nav-links.show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Grid Layout Adjustment */
+    .grid-container {
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+    /* Header */
+    .header {
+        padding: 10px 0;
+    }
+
+    /* Hamburger Menu Button */
+    .hamburger {
+        display: block;
+    }
+
+    /* Navigation Links */
+    .nav-links {
+        flex-direction: column;
+        display: none; /* Hidden by default, toggled via JavaScript */
+        width: 100%;
+        background-color: #006BB6;
+    }
+
+    .nav-links li {
+        text-align: center;
+    }
+
+    .nav-links li a {
+        padding: 12px 0;
+        border-top: 1px solid #00539C;
+    }
+
+    /* Show navigation links when hamburger is clicked */
+    .nav-links.show {
+        display: flex;
+    }
+
+    /* Main Content */
+    .main-content {
+        padding: 15px;
+    }
+
+    /* Hero Section */
+    .hero {
+        text-align: center;
+    }
+
+    /* Footer */
+    .footer {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+}

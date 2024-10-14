@@ -3,21 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Jacob Eskola">
-    <meta name="description" content="WDD 230 - Web Frontend Development, Jacob Eskola, course assignment Commerce project.">
-    <meta property="og:title" content="Commerce Home page">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="">
-    <meta property="og:image:width" content="">
-    <meta property="og:image:height" content="">
-    <meta property="og:url" content="https://eskolahj.github.io/wdd230/chamber/index.html">
-    <title>Document</title>
+    <title>Gem Chamber of Commerce</title>
+    
+    <!-- Base Styles (Common to all screen sizes) -->
     <link rel="stylesheet" href="styles/base.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/normalize.css">
+=======
+    
+    <!-- Link to small.css for screens 600px and below -->
+    <link rel="stylesheet" href="styles/small.css" media="only screen and (max-width: 600px)">
+    
+    <!-- Link to medium.css for screens between 601px and 1199px -->
+    <link rel="stylesheet" href="styles/medium.css" media="only screen and (min-width: 601px) and (max-width: 1199px)">
+    
+    <!-- Link to large.css for screens 1200px and above -->
+    <link rel="stylesheet" href="styles/large.css" media="only screen and (min-width: 1200px)">
+    
+>>>>>>> c0f1454 (sstuff)
 </head>
 <body>
-    
+    <div class="grid-container">
+        <header class="header">
+            <h1>Gem Chamber of Commerce</h1>
+            <nav>
+                <button class="hamburger">&#9776;</button>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Weather</a></li>
+                    <li><a href="#">Spotlights</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <section class="hero">
+                <h2>Welcome to the Gem Chamber of Commerce</h2>
+                <p>Join us in promoting local businesses and building a thriving community.</p>
+                <a href="#" class="cta">Join the Chamber Today</a>
+            </section>
+
+            <section class="events">
+                <h2>Upcoming Events</h2>
+                <p>Stay tuned for our networking events and workshops.</p>
+            </section>
+
+            <section class="weather">
+                <h2>Local Weather</h2>
+                <p>Current conditions: <strong>Sunny, 72°F</strong></p>
+            </section>
+
+            <section class="spotlights">
+                <h2>Business Spotlights</h2>
+                <div class="spotlight">
+                    <h3>Mary's Bakery</h3>
+                    <p>A local favorite for homemade pastries.</p>
+                </div>
+                <div class="spotlight">
+                    <h3>Smith Auto Repair</h3>
+                    <p>Trusted service since 1995.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Contact us: info@gemchamber.com | 555-123-4567</p>
+            <p>&copy; 2024 Gem Chamber of Commerce</p>
+            <p>Project for WDD 230 | Last Modified: <span id="last-modified"></span></p>
+        </footer>
+    </div>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
 </html>

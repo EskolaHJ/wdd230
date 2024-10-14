@@ -1,0 +1,60 @@
+/* large.css */
+
+/* -------------------- */
+/* Styles for Screens 1200px and above */
+/* -------------------- */
+@media only screen and (min-width: 1200px) {
+
+    /* Grid Layout Adjustment */
+    .grid-container {
+        grid-template-areas:
+            "header header"
+            "main footer";
+        grid-template-columns: 3fr 1fr;
+    }
+
+    /* Header */
+    .header {
+        padding: 25px 0;
+    }
+
+    /* Hamburger Menu Button */
+    .hamburger {
+        display: none; /* Hidden on large screens */
+    }
+
+    /* Navigation Links */
+    .nav-links {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .nav-links li {
+        margin: 0 15px;
+    }
+
+    .nav-links li a {
+        padding: 16px 20px;
+    }
+
+    /* Main Content */
+    .main-content {
+        padding: 25px;
+    }
+
+    /* Hero Section */
+    .hero {
+        text-align: left;
+    }
+
+    /* Events, Weather, Spotlights Sections */
+    .events, .weather, .spotlights {
+        margin-bottom: 25px;
+    }
+
+    /* Footer */
+    .footer {
+        font-size: 16px;
+        padding: 20px 0;
+    }
+}
