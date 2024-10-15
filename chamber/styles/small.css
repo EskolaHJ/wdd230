@@ -18,8 +18,8 @@
     /* Hamburger Menu Button */
     .hamburger {
         display: block; /* Visible on small screens */
+        background-color: #6A0DAD;
     }
-
     /* Navigation Links */
     .nav-links {
         flex-direction: column;
