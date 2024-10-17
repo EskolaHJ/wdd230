@@ -10,16 +10,16 @@ button.addEventListener('click', () => {
         const listItem = document.createElement('li');
 
         // Create a delete button
-        const deleteButton = document.createElement('button');
+        const deletButton = document.createElement('button');
 
         // Set the li text to the input value
         listItem.textContent = input.value;
 
         // Set the delete button text to ❌
-        deleteButton.textContent = '❌';
+        deletButton.textContent = '❌';
 
         // Append the delte button to the li
-        listItem.appendChild(deleteButton);
+        listItem.appendChild(deletButton);
 
         // Append the li to the list
         list.appendChild(listItem);
@@ -27,6 +27,7 @@ button.addEventListener('click', () => {
         //Add an event listener to the delete button that removes the li element when clicked
         deletButton.addEventListener('click', () => {
             list.removeChild(listItem);
+            input.focus();
         });
 
         // Clear the imput field and set focus back to it
