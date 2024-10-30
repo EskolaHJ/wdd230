@@ -25,8 +25,9 @@ main {
 }
 
 img {
-    width: 400px;
-    height: 600px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     opacity: 0;
     transition: opacity 1s east-in-out;
     animation: fade-in 1s forwards;
