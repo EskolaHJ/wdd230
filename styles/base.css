@@ -93,7 +93,22 @@ main {
     border-bottom: 2px solid #0044cc;
     padding-bottom: 5px
 }
-
+/* Image */
+.hero img {
+    width: 100%;
+    height: auto;
+}
+.hero .overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 /* Learning Activities List*/
 .card1 ul {
     list-style-type: none;

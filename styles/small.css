@@ -1,4 +1,8 @@
 @media (max-width:600px) {
+
+    .hero .overlay {
+        font-size: 1.2rem;
+    }
     header,
     nav,
     main,
