@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
 body {
@@ -28,8 +28,11 @@ img {
     width: 100%;
     max-width: 400px;
     height: auto;
-    opacity: 0;
     transition: opacity 1s ease-in-out;
+    opacity: 1; /* Set opacity to 1 by default */
+}
+
+img[loading="lazy"] {
     animation: fade-in 1s forwards;
 }
 
