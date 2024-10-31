@@ -29,9 +29,18 @@ img {
     max-width: 400px;
     height: auto;
     opacity: 0; /* Start hidden */
-    transition: opacity 100s ease-in-out; /* Smooth 3-second fade-in transition */
+    transition: opacity 3s ease-in-out; /* Smooth 3-second fade-in transition */
 }
 
 img.fade-in {
     opacity: 1; /* Fade-in when the class is applied */
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
