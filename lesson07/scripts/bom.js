@@ -136,6 +136,7 @@ function deleteChapter(chapter) {
     chaptersArray = chaptersArray.filter(item => item.chapter !== chapter); // Remove chapter from array
     setChapterList(); // Update localStorage
     renderChapters(); // Re-render updated list
+    console.log(chaptersArray);
 }
 
 // CSS for Dark Mode and Improved Visibility
@@ -168,3 +169,4 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
