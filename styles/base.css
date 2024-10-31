@@ -105,6 +105,9 @@ main {
     color: #0044cc;
 }
 /* Image */
+.hero {
+    position: relative;
+}
 .hero img {
     width: 100%;
     height: auto;
