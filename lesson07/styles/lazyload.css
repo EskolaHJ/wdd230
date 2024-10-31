@@ -28,19 +28,10 @@ img {
     width: 100%;
     max-width: 400px;
     height: auto;
-    transition: opacity 1s ease-in-out;
-    opacity: 1; /* Set opacity to 1 by default */
+    opacity: 0; /* Start hidden */
+    transition: opacity 100s ease-in-out; /* Smooth 3-second fade-in transition */
 }
 
-img[loading="lazy"] {
-    animation: fade-in 1s forwards;
-}
-
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+img.fade-in {
+    opacity: 1; /* Fade-in when the class is applied */
 }
