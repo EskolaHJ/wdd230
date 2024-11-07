@@ -3,9 +3,10 @@
     --font-family: Arial, sans-serif;
     --primary-color: #0044cc;
     --secondary-color: #f0f0f0;
-    --nav-bg-color: #333;
+    --nav-bg-color: #f71c1c;
     --text-color: #333;
     --highlight-color: #0044cc;
+    --link-bg-color: #ffcccc; /* Light red background for links */
 }
 
 /* General Reset */
@@ -72,12 +73,14 @@ nav {
     display: flex;
     justify-content: center;
     padding: 10px 0;
+    gap: 50px;
 }
 
 nav ul {
     display: flex;
     gap: 20px; /* Add spacing between navigation links */
     list-style: none;
+    
 }
 
 nav ul li {
@@ -90,7 +93,7 @@ nav ul li a {
     font-weight: bold;
     text-decoration: none;
     padding: 14px 25px; /* Increase padding for larger clickable area */
-    background-color: var(--nav-bg-color); /* Background color for links */
+    background-color: var(--link-bg-color); /* Light red background color */
     display: block;
     transition: background-color 0.3s;
     border-radius: 5px; /* Rounded corners */
