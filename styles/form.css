@@ -1,19 +1,35 @@
 /* CSS Variables */
 :root {
     --font-family: Arial, sans-serif;
-    --primary-color: #2c3e50;
-    --secondary-color: #ecf0f1;
-    --focus-color: #2980b9;
+    --primary-color: #0044cc;
+    --secondary-color: #f0f0f0;
+    --nav-bg-color: #333;
+    --text-color: #333;
+    --highlight-color: #0044cc;
 }
 
-/* General Styles */
-html, body {
-    height: 100vh; /* Full height for the page */
+/* General Reset */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* Body Styling */
+body {
     font-family: var(--font-family);
     background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Content Wrapper for Centering */
@@ -23,45 +39,70 @@ html, body {
     align-items: center;
     justify-content: center;
     flex: 1;
-    padding: 20px; /* Add padding around the centered content */
+    padding: 20px;
 }
 
 /* Header Styles */
 header {
     background-color: var(--primary-color);
-    color: #fff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     padding: 20px;
-    text-align: center;
     width: 100%;
+}
+
+header img.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 1.5rem;
 }
 
 /* Navigation Styles */
 nav {
-    background-color: #34495e;
+    background-color: var(--nav-bg-color);
     width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
     display: flex;
-    justify-content: center;
+    gap: 20px; /* Add spacing between navigation links */
+    list-style: none;
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0;
 }
 
 nav ul li a {
-    display: block;
-    color: #ecf0f1;
-    padding: 14px 20px;
+    color: white;
+    font-size: 1.2rem; /* Increase font size */
+    font-weight: bold;
     text-decoration: none;
+    padding: 14px 25px; /* Increase padding for larger clickable area */
+    background-color: var(--nav-bg-color); /* Background color for links */
+    display: block;
+    transition: background-color 0.3s;
+    border-radius: 5px; /* Rounded corners */
+}
+
+nav ul li a::before {
+    content: '✅';
+    margin-right: 8px;
 }
 
 nav ul li a:hover {
-    background-color: var(--focus-color);
+    background-color: var(--highlight-color); /* Change on hover */
 }
 
 /* Main Content Styles */
@@ -71,7 +112,7 @@ main {
     justify-content: center;
     width: 100%;
     padding: 20px;
-    flex: 1; /* Allow main content to expand */
+    flex: 1;
 }
 
 /* Form Styles */
@@ -109,9 +150,9 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
 input[type="range"]:focus {
-    border-color: var(--focus-color);
+    border-color: var(--highlight-color);
     outline: none;
-    box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
+    box-shadow: 0 0 5px rgba(0, 68, 204, 0.5);
 }
 
 button {
@@ -125,7 +166,7 @@ button {
 }
 
 button:hover {
-    background-color: #1a242f;
+    background-color: #002a80;
 }
 
 /* Rating Value Display */
@@ -136,9 +177,13 @@ button:hover {
 
 /* Footer Styles */
 footer {
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 10px;
+    background-color: var(--nav-bg-color);
+    color: white;
+    padding: 20px;
     text-align: center;
     width: 100%;
+}
+
+footer p {
+    margin-bottom: 10px;
 }
