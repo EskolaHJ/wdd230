@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Gem Chamber of Commerce Discover Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/gem-chamber-logo.png">
+    <meta property="og:url" content="https://eskolahj.github.io/wdd230/chamber/discover.html">
+    <title>Gem Chamber of Commerce | Discover</title>
+
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css" media="only screen and (max-width: 600px)">
+    <link rel="stylesheet" href="styles/medium.css" media="only screen and (min-width: 601px) and (max-width: 1199px)">
+    <link rel="stylesheet" href="styles/large.css" media="only screen and (min-width: 1200px)">
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <script src="scripts/date.js" defer></script>
+</head>
+<body>
+    <div class="grid-container">
+        <!-- Header and Nav remain unchanged -->
+        <header class="header">
+            <h1>Gem Chamber of Commerce</h1>
+            <nav>
+                <button class="hamburger">&#9776;</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Weather</a></li>
+                    <li><a href="#">Spotlights</a></li>
+                </ul>
+            </nav>
+            <button id="dark-mode-toggle" class="dark-mode-toggle">Dark Mode</button>
+        </header>
+
+        <!-- Main Content for Discover Page -->
+        <main class="discover-main">
+            <aside class="sidebar">
+                <h2>Welcome Back!</h2>
+                <p id="visit-message"></p> <!-- Message displayed based on time between visits -->
+                <div class="sidebar-content">
+                    <h3>Community Demographics</h3>
+                    <p>Population: 25,000</p>
+                    <p>Median Age: 36.4 years</p>
+                    <!-- Additional sidebar content -->
+                </div>
+            </aside>
+            
+            <section class="gallery">
+                <h2>Local Attractions</h2>
+                <div class="gallery-grid">
+                    <img src="images/attraction1.jpg" alt="Attraction 1" loading="lazy" class="gallery-img">
+                    <img src="images/attraction2.jpg" alt="Attraction 2" loading="lazy" class="gallery-img">
+                    <img src="images/attraction3.jpg" alt="Attraction 3" loading="lazy" class="gallery-img">
+                    <img src="images/attraction4.jpg" alt="Attraction 4" loading="lazy" class="gallery-img">
+                    <img src="images/attraction5.jpg" alt="Attraction 5" loading="lazy" class="gallery-img">
+                    <img src="images/attraction6.jpg" alt="Attraction 6" loading="lazy" class="gallery-img">
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer remains unchanged -->
+        <footer class="footer">
+            <p>Contact us: info@gemchamber.com | 555-123-4567</p>
+            <p>&copy; 2024 Gem Chamber of Commerce</p>
+            <p>Project for WDD 230 | Last Modified: <span id="last-modified"></span></p>
+        </footer>
+    </div>
+    
+    <!-- Scripts for Dark Mode, Menu, and Visit Date -->
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/visit.js" defer></script>
+</body>
+</html>

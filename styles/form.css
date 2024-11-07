@@ -3,16 +3,26 @@
     --font-family: Arial, sans-serif;
     --primary-color: #2c3e50;
     --secondary-color: #ecf0f1;
+    --focus-color: #2980b9;
 }
 
 /* General Styles */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+html, body {
+    height: 100vh; /* Full height for the page */
+    margin: 0;
     font-family: var(--font-family);
     background-color: var(--secondary-color);
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main Content Centering */
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
 }
 
 /* Header Styles */
@@ -21,22 +31,25 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
+    width: 100%;
 }
 
 /* Navigation Styles */
 nav {
     background-color: #34495e;
-    overflow: hidden;
+    width: 100%;
 }
 
 nav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    float: left;
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -47,26 +60,27 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #2980b9;
-}
-
-/* Clearfix for Navigation */
-nav::after {
-    content: "";
-    display: table;
-    clear: both;
+    background-color: var(--focus-color);
 }
 
 /* Main Content Styles */
 main {
-    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     padding: 20px;
+    flex: 1; /* Allow main content to expand */
 }
 
 /* Form Styles */
 form {
     max-width: 600px;
-    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 label {
@@ -82,7 +96,19 @@ input[type="range"] {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     box-sizing: border-box;
+}
+
+/* Focus styles for inputs */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="range"]:focus {
+    border-color: var(--focus-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
 }
 
 button {
@@ -91,6 +117,7 @@ button {
     background-color: var(--primary-color);
     color: #fff;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -110,5 +137,5 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
-    /* Removed position fixed */
+    width: 100%;
 }
