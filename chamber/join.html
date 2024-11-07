@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Gem Chamber of Commerce - Join">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/gem-chamber-logo.png">
+    <meta property="og:url" content="https://eskolahj.github.io/wdd230/chamber/join.html">
+    <title>Join - Gem Chamber of Commerce</title>
+
+    <meta name="description" content="Become a member of the Gem Chamber of Commerce to access exclusive benefits and community events.">
+    <meta name="author" content="Jacob Eskola">
+    <link rel="icon" href="../favicon.ico">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css" media="only screen and (max-width: 600px)">
+    <link rel="stylesheet" href="styles/medium.css" media="only screen and (min-width: 601px) and (max-width: 1199px)">
+    <link rel="stylesheet" href="styles/large.css" media="only screen and (min-width: 1200px)">
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <!-- JavaScript File -->
+    <script src="scripts/formDate.js" defer></script>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <h1>Gem Chamber of Commerce</h1>
+            <nav>
+                <button class="hamburger">&#9776;</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Weather</a></li>
+                    <li><a href="#">Spotlights</a></li>
+                </ul>
+            </nav>
+            <button id="dark-mode-toggle" class="dark-mode-toggle">Dark Mode</button>
+        </header>
+
+        <main class="join-layout">
+            <section class="form-container">
+                <h2>Join the Chamber</h2>
+                <form method="get" action="thankyou.html">
+                    <label for="first-name">First Name:
+                        <input type="text" id="first-name" name="first-name" required>
+                    </label>
+                    
+                    <label for="last-name">Last Name:
+                        <input type="text" id="last-name" name="last-name" required>
+                    </label>
+                    
+                    <label for="position">Title/Position:
+                        <input type="text" id="position" name="position" required pattern="^[A-Za-z\s-]{7,}$" title="Minimum 7 characters, letters, hyphens, and spaces only">
+                    </label>
+                    
+                    <label for="email">Email:
+                        <input type="email" id="email" name="email" required placeholder="example@domain.com">
+                    </label>
+                    
+                    <label for="phone">Mobile Phone:
+                        <input type="tel" id="phone" name="phone" required>
+                    </label>
+                    
+                    <label for="organization">Organization Name:
+                        <input type="text" id="organization" name="organization" required>
+                    </label>
+                    
+                    <label for="membership-level">Membership Level:
+                        <select id="membership-level" name="membership-level" required>
+                            <option value="NP">NP Membership (Non-profit)</option>
+                            <option value="Bronze">Bronze Membership</option>
+                            <option value="Silver">Silver Membership</option>
+                            <option value="Gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    
+                    <label for="description">Organization Description:
+                        <textarea id="description" name="description" rows="4"></textarea>
+                    </label>
+                    
+                    <input type="hidden" id="form-date" name="form-date">
+                    
+                    <button type="submit">Submit Application</button>
+                </form>
+            </section>
+
+            <aside class="membership-benefits">
+                <h3>Membership Level Benefits</h3>
+                <div class="benefit">
+                    <h4>NP Membership</h4>
+                    <p>No fee. Access to non-profit events and networking.</p>
+                </div>
+                <div class="benefit">
+                    <h4>Bronze Membership</h4>
+                    <p>Includes spotlight position, event discounts, and basic training sessions.</p>
+                </div>
+                <div class="benefit">
+                    <h4>Silver Membership</h4>
+                    <p>All Bronze benefits, plus premium advertising and quarterly workshops.</p>
+                </div>
+                <div class="benefit">
+                    <h4>Gold Membership</h4>
+                    <p>All Silver benefits, VIP event access, and exclusive networking opportunities.</p>
+                </div>
+            </aside>
+        </main>
+
+        <footer class="footer">
+            <p>Contact us: info@gemchamber.com | 555-123-4567</p>
+            <p>&copy; 2024 Gem Chamber of Commerce</p>
+            <p>Project for WDD 230 | Last Modified: <span id="last-modified"></span></p>
+        </footer>
+    </div>
+
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+</body>
+</html>
