@@ -1,0 +1,12 @@
+/* Media query for medium screens */
+@media (min-width: 600px) and (max-width: 849px) {
+    #logo {
+        width: 100px;
+        height: 100px;
+    }
+
+  #demographic, #events-2, #attractions {
+    margin-bottom: 30px;
+  }
+
+}

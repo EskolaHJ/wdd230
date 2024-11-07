@@ -1,0 +1,244 @@
+/* Media query for larger screens */
+@media (min-width: 850px) {
+    /*Header Styles in larger screen */ 
+     header h1 {
+     font-size: 2rem;
+    }
+ 
+     #logo {
+         width: 120px;
+         height: 120px;
+         margin: 10px;
+     }
+ 
+     .toggle-container {
+         margin-left: 380px;
+         margin-top: auto;
+         margin-bottom: 100px;
+     }
+     
+ 
+     /*Navigation Styling for larger screen */
+     nav ul{
+         list-style-type: none;
+         display: flex;
+         flex-direction: row;
+         position: static;
+         bottom: auto;
+         right: auto;  
+         margin-bottom: 10px;
+     }
+ 
+     nav a {
+         border-top: 1px solid #f4f4f4;
+     }
+ 
+     .navigation {
+         display: flex;
+         flex-direction: row;
+         margin-top: 80px;
+         margin-bottom: -20px;
+         background: none;
+     }
+ 
+     /* Hamburger hidden*/
+     #hamburger {
+         display: none;
+     }
+ 
+     #hero {
+         display: grid;
+         grid-template-columns: 1fr 3fr 1fr;
+         grid-template-rows: 1fr 1fr;
+         margin-top: 15px;
+     
+     }
+ 
+     #hero-box {
+         grid-column: 1 / 4;
+         grid-row: 1 / 3;
+         z-index: -1;
+     }
+  
+     #hero-img {
+         width: 100%;
+     
+     }
+ 
+     #hero-msg {
+         background: #EDDFCC;
+         width: auto;
+         opacity: .8;
+         text-align: center;
+         grid-column: 1 / 4;
+         grid-row: 2 / 3;
+         margin: auto;
+         margin-top: -140px;
+         color: #f4f4f4;
+         border-radius: 3%;
+    
+     }
+ 
+     .home-title {
+         font-size: 3.5rem;
+         font-family: 'Poppins', sans serif;
+         color: #1d414d;
+         
+     }
+ /* Community Resources Styling */
+     .resources {
+         flex-direction: row;
+         flex-wrap: wrap;
+         position: relative;
+         justify-content: flex-start;
+         max-width: 1000px;
+         margin:  40px auto;
+ 
+     }
+ 
+     .resource-img {
+         width: 100%;
+         max-width: 600px;
+         margin-top: 0;
+         border-radius: 5%;
+         display: block;
+     }
+ 
+     .resource-msg {
+         position: absolute;
+         top: 47%;
+         left: 75%;
+         transform: translate(-50%, -50%);
+         opacity: 0.9;
+         padding: 20px;
+         max-width: 550px;
+         z-index: 1;
+         text-align: left;
+     }
+      
+     .resource-msg h1{
+         font-size: 2em;
+         margin-bottom: 0px;
+         margin-top: 20px;
+         margin-bottom: 10px;
+ 
+     }
+     .resource-msg p {
+         text-align: left;
+     }
+ 
+     .button-box {
+         text-align: left;
+         margin-bottom: 10px;
+     }
+ 
+     .join-now {
+         margin: 0;
+     }
+ 
+     /* Styling for Events and Weather */
+     .middle {
+         grid-template-columns: 1fr auto 1fr;
+         align-items: center;
+         margin: 20px;
+         margin-bottom: 40px;
+     }
+ 
+     .line {
+         height: 100%; 
+         width: 2px;
+         display: block;
+     }
+ 
+ /* Business Highlight Styling */
+     .business-highlight {
+         position: relative;
+         display: flex;
+         align-items: center;
+         justify-content: flex-end;
+         margin: 50px auto;
+         max-width: 1000px
+     
+     }
+ 
+     
+ 
+     .business-msg {
+         
+         position: absolute;
+         top: 30%;
+         left: auto;
+         transform: translate(-50%, -20%);
+         background: #EDDFCC;
+         opacity: .9;
+         color: #1d414d;
+         padding: 20px;
+         z-index: 1;
+         text-align: left;
+         width: 500px;
+         height: auto;
+         
+     }
+ 
+     #bus-address {
+         padding-bottom: 20px;
+     }
+ 
+ 
+     .business-img {
+         position: relative;
+         width: 100%;
+         max-width: 600px;
+         margin-top: 0;
+         border-radius: 5%;
+         display: block;
+         margin-left: 400px;
+        
+     }
+ 
+     /* Discover Page Styling */
+ 
+     #main-2 {
+         grid-template-columns: 1fr 2fr;
+ 
+     }
+ 
+     .alpine-imgs picture {
+         margin-top: 40px;
+         margin-bottom: 0;
+     }
+ 
+     .alpine-imgs picture img {
+         transition: box-shadow 0.3s ease;
+     }
+ 
+     .alpine-imgs picture img:hover {
+         box-shadow: 0 4px 50px #1d414d;
+     }
+ 
+     #demographic, #events-2, #attractions {
+         margin-bottom: 40px;
+     }
+ 
+     /*Footer Styling for larger screen */
+ 
+     footer {
+         display: grid;
+         grid-template-columns: 1fr auto 1fr;
+         align-items: center;
+         padding: 20px;
+     }
+ 
+   
+ 
+     .footer-line {
+         height: 100%; 
+         width: 2px;
+         display: block;
+     }
+ 
+    
+ 
+     
+ 
+ }

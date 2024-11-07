@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* Title row */
+.title-row th {
+    background-color: #000;
+    color: #fff;
+    padding: 12px;
+    font-size: 1.5em;
+}
+
+/* Table caption */
+caption {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Header row */
+thead tr:nth-child(2) th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Zebra striping for rows */
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e0e0e0;
+}
+
+/* Table cells */
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+/* Check and cross marks */
+td {
+    font-size: 1.2em;
+}
+
+td:contains('✔️') {
+    color: purple;
+}
+
+td:contains('❌') {
+    color: red;
+}
