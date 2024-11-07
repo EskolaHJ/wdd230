@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- Include your course home page's header content here -->
+        <h1>Course Website Header</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <!-- Include your course home page's navigation menu here -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="form.html">Form</a></li>
+            <!-- Add other navigation links as needed -->
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Simple Form</h2>
+        <form method="get" action="record.html">
+            <!-- Username Field -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}" title="Password must be at least 8 alphanumeric characters.">
+
+            <!-- Confirm Password Field -->
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="A valid byui.edu email address.">
+
+            <!-- Page Rating Field -->
+            <label for="rating">Page Rating:</label>
+            <input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="document.getElementById('ratingValue').textContent = this.value;">
+            <span id="ratingValue">5</span>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Include your course home page's footer content here -->
+        <p>Course Website Footer</p>
+    </footer>
+
+    <!-- JavaScript for Password Confirmation -->
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            const password = document.getElementById('password');
+            const confirmPassword = document.getElementById('confirm_password');
+
+            if (password.value !== confirmPassword.value) {
+                alert('Passwords do not match. Please try again.');
+                password.value = '';
+                confirmPassword.value = '';
+                password.focus();
+                event.preventDefault(); // Prevent form submission
+            }
+        });
+    </script>
+
+</body>
+</html>
