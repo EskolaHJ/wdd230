@@ -132,6 +132,34 @@ img {
     height: auto;
 }
 
+/* Grid Layout */
+.discover-layout {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+}
+
+.sidebar {
+    padding: 1rem;
+    background-color: #f7f7f7;
+}
+
+.gallery .images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .discover-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery .images {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Dark mode styles */
 
 body.dark-mode {
