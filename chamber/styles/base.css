@@ -239,6 +239,35 @@ img {
     color: #555;
 }
 
+/* directory */
+
+/* Styles for grid and list views */
+.directory.grid-view .member-card {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    vertical-align: top;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.directory.list-view .member-card {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    box-shadow: none;
+}
+
+.member-card img {
+    max-width: 100px;
+    float: left;
+    margin-right: 10px;
+}
+
+.member-card h3 {
+    margin: 0;
+}
+
+
 /* Responsive Adjustments */
 @media only screen and (max-width: 600px) {
     .join-layout {

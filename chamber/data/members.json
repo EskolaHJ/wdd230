@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Mary's Bakery",
+        "address": "123 Main St, Hometown",
+        "phone": "555-1234",
+        "website": "https://marysbakery.com",
+        "image": "images/marys-bakery.png",
+        "membershipLevel": "Gold",
+        "description": "A local favorite for homemade pastries with fresh ingredients."
+    },
+    {
+        "name": "Smith Auto Repair",
+        "address": "456 Elm St, Hometown",
+        "phone": "555-5678",
+        "website": "https://smithautorepair.com",
+        "image": "images/smith-auto-repair.png",
+        "membershipLevel": "Silver",
+        "description": "Trusted auto repair services since 1995."
+    },
+    {
+        "name": "Green Valley Landscaping",
+        "address": "789 Oak St, Hometown",
+        "phone": "555-9101",
+        "website": "https://greenvalleylandscaping.com",
+        "image": "images/green-valley-landscaping.png",
+        "membershipLevel": "Bronze",
+        "description": "Providing professional landscaping and maintenance services."
+    },
+    {
+        "name": "Hometown Café",
+        "address": "101 Pine St, Hometown",
+        "phone": "555-1122",
+        "website": "https://hometowncafe.com",
+        "image": "images/hometown-cafe.png",
+        "membershipLevel": "Gold",
+        "description": "A cozy spot for delicious meals and community gatherings."
+    },
+    {
+        "name": "Tech Solutions",
+        "address": "202 Maple St, Hometown",
+        "phone": "555-2233",
+        "website": "https://techsolutions.com",
+        "image": "images/tech-solutions.png",
+        "membershipLevel": "Platinum",
+        "description": "Your trusted partner for IT solutions and support."
+    },
+    {
+        "name": "The Book Nook",
+        "address": "303 Cedar St, Hometown",
+        "phone": "555-3344",
+        "website": "https://thebooknook.com",
+        "image": "images/the-book-nook.png",
+        "membershipLevel": "Silver",
+        "description": "An independent bookstore with a wide selection of genres."
+    },
+    {
+        "name": "Fitness First Gym",
+        "address": "404 Birch St, Hometown",
+        "phone": "555-4455",
+        "website": "https://fitnessfirstgym.com",
+        "image": "images/fitness-first-gym.png",
+        "membershipLevel": "Gold",
+        "description": "Helping the community stay fit and healthy with top-notch facilities."
+    }
+]

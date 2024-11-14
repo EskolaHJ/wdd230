@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Gem Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/gem-chamber-logo.png">
+    <meta property="og:url" content="https://eskolahj.github.io/wdd230/chamber/directory.html">
+    <title>Gem Chamber of Commerce - Directory</title>
+
+    <meta name="description" content="Directory of members for the Gem Chamber of Commerce.">
+    <meta name="author" content="Jacob Eskola">
+    <link rel="icon" href="../favicon.ico">
+    
+    <!-- Base Styles (Common to all screen sizes) -->
+    <link rel="stylesheet" href="styles/base.css">
+    
+    <!-- Link to small.css for screens 600px and below -->
+    <link rel="stylesheet" href="styles/small.css" media="only screen and (max-width: 600px)">
+    
+    <!-- Link to medium.css for screens between 601px and 1199px -->
+    <link rel="stylesheet" href="styles/medium.css" media="only screen and (min-width: 601px) and (max-width: 1199px)">
+    
+    <!-- Link to large.css for screens 1200px and above -->
+    <link rel="stylesheet" href="styles/large.css" media="only screen and (min-width: 1200px)">
+    
+    <!-- Link to normalize.css -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    
+    <!-- JavaScript File -->
+    <script src="scripts/date.js" defer></script>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <h1>Gem Chamber of Commerce</h1>
+            <nav>
+                <button class="hamburger">&#9776;</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Weather</a></li>
+                    <li><a href="discover.html">Spotlights</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                </ul>
+            </nav>
+            <button id="dark-mode-toggle" class="dark-mode-toggle">Dark Mode</button>
+        </header>
+
+        <main class="main-content">
+            <h2>Member Directory</h2>
+            <div class="view-toggle">
+                <button id="grid-view">Grid View</button>
+                <button id="list-view">List View</button>
+            </div>
+            <section id="directory" class="directory grid-view">
+                <!-- Member data will be loaded here via JavaScript -->
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Contact us: info@gemchamber.com | 555-123-4567</p>
+            <p>&copy; 2024 Gem Chamber of Commerce</p>
+            <p>Project for WDD 230 | Last Modified: <span id="last-modified"></span></p>
+        </footer>
+    </div>
+    
+    <!-- JavaScript Files -->
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/directory.js"></script>
+</body>
+</html>
