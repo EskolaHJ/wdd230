@@ -267,6 +267,83 @@ img {
     margin: 0;
 }
 
+/* Weather Section */
+.weather {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #6A0DAD; /* Violet border */
+    border-radius: 8px;
+    background-color: #FFF3CD; /* Light yellow background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.current-weather {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 10px auto; /* Center the icon */
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.forecast-card {
+    text-align: center;
+    background-color: #FFFFFF; /* White background for cards */
+    border: 1px solid #6A0DAD; /* Violet border */
+    border-radius: 8px;
+    padding: 10px;
+    width: 30%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+}
+
+.forecast-card img {
+    width: 40px;
+    height: 40px;
+    margin: 10px 0;
+}
+
+.forecast-card p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #6A0DAD; /* Violet text color */
+}
+
+.current-weather p {
+    font-size: 1.2em;
+    color: #6A0DAD; /* Violet text color */
+}
+
+.current-weather strong {
+    font-weight: bold;
+    color: #6A0DAD; /* Violet for emphasis */
+}
+
+
+.banner {
+    background-color: #ffcc00;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #ddd; /* Subtle border for separation */
+    margin-bottom: 20px; /* Spacing below banner */
+}
+
+.banner.hidden {
+    display: none;
+}
+
+
 
 /* Responsive Adjustments */
 @media only screen and (max-width: 600px) {

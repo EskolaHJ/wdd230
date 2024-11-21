@@ -12,26 +12,21 @@
     <meta name="description" content="Join the Gem Chamber of Commerce to promote local businesses and build a thriving community through events, spotlights, and networking opportunities.">
     <meta name="author" content="Jacob Eskola">
     <link rel="icon" href="../favicon.ico">
-    <!-- Base Styles (Common to all screen sizes) -->
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    
-    <!-- Link to small.css for screens 600px and below -->
     <link rel="stylesheet" href="styles/small.css" media="only screen and (max-width: 600px)">
-    
-    <!-- Link to medium.css for screens between 601px and 1199px -->
     <link rel="stylesheet" href="styles/medium.css" media="only screen and (min-width: 601px) and (max-width: 1199px)">
-    
-    <!-- Link to large.css for screens 1200px and above -->
     <link rel="stylesheet" href="styles/large.css" media="only screen and (min-width: 1200px)">
-
-    <!-- Link to normalize.css-->
-     <link rel="stylesheet" href="styles/normalize.css">
-    
-    <!-- JavaScript File -->
     <script src="scripts/date.js" defer></script>
 </head>
 <body>
     <div class="grid-container">
+        <!-- Banner -->
+        <div id="banner" class="banner hidden">
+            <p>Join us for a Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.</p>
+            <button id="close-banner">❌</button>
+        </div>
+
         <header class="header">
             <h1>Gem Chamber of Commerce</h1>
             <nav>
@@ -61,7 +56,15 @@
 
             <section class="weather">
                 <h2>Local Weather</h2>
-                <p>Current conditions: <strong>Sunny, 72°F</strong></p>
+                <div class="current-weather">
+                    <p>Current Temperature: <strong><span id="current-temp">--</span>°F</strong></p>
+                    <p>Conditions: <span id="current-desc">--</span></p>
+                    <img id="current-icon" src="" alt="Weather Icon" class="weather-icon">
+                </div>
+                <h3>3-Day Forecast</h3>
+                <div id="forecast" class="forecast">
+                    <!-- The forecast cards will populate here -->
+                </div>
             </section>
 
             <section class="spotlights">
@@ -83,7 +86,10 @@
             <p>Project for WDD 230 | Last Modified: <span id="last-modified"></span></p>
         </footer>
     </div>
-    <script src="scripts/menu.js"></script>
-    <script src="scripts/darkmode.js"></script>
+
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/darkmode.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </body>
 </html>
