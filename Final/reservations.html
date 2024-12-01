@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserve your scooter, ATV, or Jeep with ~Scoots~ in Cozumel. Easy booking process and flexible rental options.">
+    <title>~Scoots~ Reservations</title>
+    <!-- Link to CSS files -->
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <h1>~Scoots~ Reservations</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Rental Agreement Information</h2>
+        <ul>
+            <li>A $50 security deposit is required to confirm reservations.</li>
+            <li>A valid driver's license is required in hand at the time of rental.</li>
+            <li>No one under the age of 12 years is allowed to ride on the scooters.</li>
+            <li>Fuel charge is not included.</li>
+            <li>Unlimited mileage.</li>
+            <li>Liability insurance is included.</li>
+            <li>Damage insurance is available for purchase.</li>
+            <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+            <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+            <li>Rentals may be returned to either physical location.</li>
+        </ul>
+
+        <!-- Reservation Form -->
+        <h2>Make a Reservation</h2>
+        <form id="reservation-form" action="#" method="post">
+            <fieldset>
+                <legend>Rental Details</legend>
+
+                <label for="rental-type">Rental Type:</label>
+                <select id="rental-type" name="rental-type" required>
+                    <option value="">--Select Rental Type--</option>
+                    <option value="Honda Metropolitan">Honda Metropolitan Scooter</option>
+                    <option value="Honda Dio">Honda Dio Scooter</option>
+                    <option value="Honda PCX150">Honda PCX150 Scooter</option>
+                    <option value="Honda Pioneer 1000">Honda Pioneer 1000 ATV</option>
+                    <option value="Jeep Wrangler 4 Door">Jeep Wrangler - 4 Door with A/C</option>
+                    <option value="Jeep Wrangler 2 Door">Jeep Wrangler - 2 Door Open Air</option>
+                </select>
+
+                <label for="rental-date">Date:</label>
+                <input type="date" id="rental-date" name="rental-date" required>
+
+                <label for="rental-period">Rental Period:</label>
+                <select id="rental-period" name="rental-period" required>
+                    <option value="">--Select Period--</option>
+                    <option value="Half Day">Half Day (3 hrs)</option>
+                    <option value="Full Day">Full Day</option>
+                </select>
+
+                <label for="number-of-rentals">Number of Rentals:</label>
+                <input type="number" id="number-of-rentals" name="number-of-rentals" min="1" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal Details</legend>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" name="phone-number" required>
+
+                <label for="home-location">Home State or Country:</label>
+                <input type="text" id="home-location" name="home-location" required>
+
+                <label for="cruise-line">Cruise Line (if applicable):</label>
+                <input type="text" id="cruise-line" name="cruise-line">
+            </fieldset>
+
+            <fieldset>
+                <legend>Special Accommodations / Comments</legend>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Any special requests or drop-off locations?"></textarea>
+            </fieldset>
+
+            <button type="submit">Submit Reservation</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ~Scoots~. Your adventure starts here!</p>
+    </footer>
+</body>
+</html>

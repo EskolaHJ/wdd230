@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="~Scoots~: Rent scooters, ATVs, and Jeeps in Cozumel. Explore the island with us!">
+    <title>~Scoots~ Home</title>
+    <!-- Link to CSS files -->
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Weather Script -->
+    <script defer src="scripts/weather.js"></script>
+</head>
+<body>
+    <!-- Top Message for Today's High Temperature -->
+    <div id="top-message" class="top-message">
+        <p>High Temperature Today: <span id="temp-max"></span>°C <button onclick="closeMessage()">Close</button></p>
+    </div>
+
+    <!-- Header with Navigation -->
+    <header>
+        <h1>~Scoots~</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h2>Explore Cozumel with ~Scoots~</h2>
+            <p>Your best choice for scooters, ATVs, and Jeep rentals.</p>
+            <button onclick="window.location.href='reservations.html'">Make a Reservation</button>
+        </section>
+
+        <!-- Weather Information Section -->
+        <section class="weather">
+            <h2>Current Weather in Cozumel</h2>
+            <div id="weather-info">
+                <p>Loading weather data...</p>
+            </div>
+        </section>
+
+        <!-- Rentals Summary Section -->
+        <section class="rentals-summary">
+            <h2>Our Rentals</h2>
+            <div class="rental-types">
+                <div class="rental">
+                    <img src="images/honda-metropolitan.jpg" alt="Honda Metropolitan Scooter">
+                    <p>Honda Scooters</p>
+                </div>
+                <div class="rental">
+                    <img src="images/honda-pioneer.jpg" alt="Honda Pioneer ATV">
+                    <p>Side-by-Side ATVs</p>
+                </div>
+                <div class="rental">
+                    <img src="images/jeep-wrangler-ac.jpg" alt="Jeep Wrangler with A/C">
+                    <p>Jeeps</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with Social Media Links -->
+    <footer>
+        <p>&copy; 2024 ~Scoots~. Your adventure starts here!</p>
+        <ul class="social-links">
+            <li><a href="#" aria-label="Facebook">Facebook</a></li>
+            <li><a href="#" aria-label="Twitter">Twitter</a></li>
+            <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

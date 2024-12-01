@@ -1,0 +1,23 @@
+/* medium.css */
+/* Styles for medium screens (tablets) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        padding: 30px;
+    }
+
+    .rental-card {
+        padding: 12px;
+    }
+
+    .rental-pricing th, .rental-pricing td {
+        padding: 7px;
+    }
+
+    .map iframe {
+        height: 400px;
+    }
+}

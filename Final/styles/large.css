@@ -1,0 +1,27 @@
+/* large.css */
+/* Styles for large screens (desktops) */
+@media (min-width: 1025px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 60px;
+    }
+
+    .rental-types .rental img {
+        width: 200px;
+    }
+
+    .rental-card {
+        padding: 20px;
+    }
+
+    .rental-pricing th, .rental-pricing td {
+        padding: 10px;
+    }
+
+    .map iframe {
+        height: 500px;
+    }
+}
