@@ -25,11 +25,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Populate the weather section
     function populateWeather(data) {
-        // Extract relevant weather data
-        const currentWeather = data.list[0]; // Current weather data
-        const todayDate = new Date().getDate();
+        // Extract current weather data
+        const currentWeather = data.list.find(item => {
+            const itemDate = new Date(item.dt * 1000);
+            const currentDate = new Date();
+            return itemDate.toDateString() === currentDate.toDateString();
+        }) || data.list[0]; // Fallback to first item if not found
+
+        const { temp, humidity, temp_max } = currentWeather.main;
+        const { main, description, icon } = currentWeather.weather[0];
 
         // Find next day's forecast at 15:00 (3:00 PM)
+        const todayDate = new Date().getDate();
         let nextDayWeather = null;
         for (let i = 0; i < data.list.length; i++) {
             const forecastDate = new Date(data.list[i].dt * 1000);
@@ -42,28 +49,41 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
 
-        // Current weather
-        const { temp, humidity, temp_max } = currentWeather.main;
-        const { main, description, icon } = currentWeather.weather[0];
+        // Initialize variables for next day's weather
+        let nextDayTemp = null;
+        let nextDayDescription = "";
+        let nextDayIcon = "";
 
-        // Next day's weather
-        const nextDayTemp = nextDayWeather ? nextDayWeather.main.temp : "N/A";
-        const nextDayDescription = nextDayWeather
-            ? nextDayWeather.weather[0].description
-            : "N/A";
-        const nextDayIcon = nextDayWeather ? nextDayWeather.weather[0].icon : "";
+        if (nextDayWeather) {
+            nextDayTemp = nextDayWeather.main.temp;
+            nextDayDescription = nextDayWeather.weather[0].description;
+            nextDayIcon = nextDayWeather.weather[0].icon;
+        }
 
-        // Update the weather section
-        weatherContainer.innerHTML = `
+        // Update the weather section with current weather
+        let weatherHTML = `
             <p><strong>Current Temperature:</strong> ${temp.toFixed(1)}°C</p>
             <p><strong>Humidity:</strong> ${humidity}%</p>
             <p><strong>Conditions:</strong> ${main} - ${description}</p>
             <img src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="${description}">
-            <h3>Tomorrow at 3:00 PM</h3>
-            <p><strong>Temperature:</strong> ${nextDayTemp.toFixed(1)}°C</p>
-            <p><strong>Conditions:</strong> ${nextDayDescription}</p>
-            ${nextDayIcon ? `<img src="https://openweathermap.org/img/wn/${nextDayIcon}@2x.png" alt="${nextDayDescription}">` : ""}
         `;
+
+        // Add next day's weather if available
+        if (nextDayWeather) {
+            weatherHTML += `
+                <h3>Tomorrow at 3:00 PM</h3>
+                <p><strong>Temperature:</strong> ${nextDayTemp.toFixed(1)}°C</p>
+                <p><strong>Conditions:</strong> ${nextDayDescription}</p>
+                <img src="https://openweathermap.org/img/wn/${nextDayIcon}@2x.png" alt="${nextDayDescription}">
+            `;
+        } else {
+            weatherHTML += `
+                <h3>Tomorrow's Forecast at 3:00 PM</h3>
+                <p>Data not available.</p>
+            `;
+        }
+
+        weatherContainer.innerHTML = weatherHTML;
 
         // Update the top message with today's high temperature
         tempMaxElement.textContent = temp_max.toFixed(1);
