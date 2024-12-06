@@ -18,7 +18,7 @@
         "reservation": { "halfDay": 30, "fullDay": 40 },
         "walkIn": { "halfDay": 35, "fullDay": 45 },
         "description": "A sporty scooter designed for two passengers, ideal for couples or friends.",
-        "image": "images/honda-dio.jpg",
+        "image": "images/honda-dio.png",
         "features": ["110cc engine", "Comfortable seating", "Sleek design"],
         "requirements": ["Valid driver’s license", "Rider must be 12+ years"]
       },
